@@ -1,6 +1,7 @@
 defmodule ExMon.Player do
   @required_keys [:life, :move_avg, :move_heal, :move_rnd, :name]
   @max_life 100
+  @moduledoc false
 
   @enforce_keys @required_keys
   defstruct @required_keys
