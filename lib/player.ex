@@ -3,7 +3,8 @@ defmodule ExMon.Player do
   @max_life 100
   @moduledoc false
 
-  @enforce_keys @required_keys # @enforce_keys => define as chaves obrigatórias
+  # @enforce_keys => define as chaves obrigatórias
+  @enforce_keys @required_keys
   defstruct @required_keys
 
   def build(name, move_rnd, move_avg, move_heal) do
